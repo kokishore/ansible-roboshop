@@ -9,7 +9,7 @@
     ansible.builtin.command: dnf module enable nodejs:20 -y
 
   - name: Installing NodeJS
-    ansible.builtinn.dnf:
+    ansible.builtin.dnf:
       name: nodejs
       state: present
 
@@ -26,7 +26,7 @@
      home: /app
 
   - name: download user code 
-    ansible.builting.get_url:
+    ansible.builtin.get_url:
       url: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip
       dest: /tmp/user.zip  
 
