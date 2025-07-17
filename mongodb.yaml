@@ -13,7 +13,7 @@
       state: present
 
   - name: Start and enable Mongodb Service
-    ansible .builtin.service:
+    ansible.builtin.service:
       name : mongod
       state: started
       enabled: yes
